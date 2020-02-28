@@ -73,12 +73,12 @@
 
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
   border-bottom-color: #FFFFFF
-} 
-/* container */
-.swiper{
-  background-image: url(images/download.jpeg);
-  background-size:100% ;
-  background-repeat: no-repeat;
-  /* background-color: aqua; */
-  height:600px ;
+}
+
+p{
+  font-size:20px;
+  
+}
+.container{
+  background-image: url(images/maxresdefault.jpg);
 }
