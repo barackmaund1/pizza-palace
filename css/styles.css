@@ -92,3 +92,49 @@ color: saddlebrown;
  /* .hide{
    display: none;
  } */
+ .choise{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.deliver{
+  display: none;
+}
+.delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+td,th{
+  font-size: 40px;
+  
+}
+.choise h2{
+  color:orange;
+  text-align: left;
+}
+#your-orders{
+  font-size: 40px;
+}
+
+#contact h2{
+  text-align: center;
+}
+#contact{
+  color: black;
+}
+#contactdetails h2{
+  text-align: left;
+}
+.footer{
+  padding-top: 5%;
+}
+#addedprice{
+  display: none;
+}
+#finallmessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 28px;}

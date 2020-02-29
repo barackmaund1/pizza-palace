@@ -1,5 +1,5 @@
-// business logic
-// constructor function
+// // business logic
+// // constructor function
 // function Pizza(pname,psize,pcrust,ptopping,total) {
 //     this.pname=pname;
 //     this.psize=psize;
@@ -156,7 +156,6 @@ $(document).ready(function(){
     if((psize == "0") && (pcrust == "0")){
       console.log("nothing selected");
       $("button.proceed").show();
-      $("#information").show();
       $("div.choise").hide();
       alert("Please select pizza size and crust"); 
     }
@@ -164,6 +163,8 @@ $(document).ready(function(){
       $("button.proceed").hide();
       $("#information").hide();
       $("div.choise").slideDown(1000);
+      alert("confirm your cart container below and proceed with ordering")
+    
     }
 
     total = price + crust_price + topping_value;
@@ -242,7 +243,7 @@ $(document).ready(function(){
       $("button#checkout").hide();
       $("button.addPizza").hide();
       $("button.deliver").slideDown(1000);
-      $("#addedprice").slideDown(1000);
+      $("#addedprice").slideup(1000);
       console.log("Your total bills is sh. "+checkoutTotal);
       $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
     });
@@ -251,7 +252,7 @@ $(document).ready(function(){
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
       $(".choise h2").hide();
-      $(".delivery").slideDown(1000);
+      $(".delivery").slideup(1000);
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
