@@ -8,7 +8,9 @@
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 1.2rem
+  font-size: 2rem;
+  
+  
 }
 
 .navbar-inverse {
@@ -83,3 +85,10 @@ p{
 font-size: x-large;
 color: saddlebrown;
 }
+ .nav .nav-item .nav-link{
+   padding:10px ;
+ }
+ /* order */
+ .hide{
+   display: none;
+ }
