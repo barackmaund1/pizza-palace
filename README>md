@@ -1,0 +1,50 @@
+## PALACE PIZZA
+
+# Author
+- Barack Maundu
+
+# Description
+- This a website that mainly enables the user to order pizza easily while in their residence.
+
+# BDD
+click the pizza image-get a brief definition of the kind of pizza	Pick your choice
+click the topping image-get a brief definition of the kind of topping	Pick your choice
+click the crust image-get a brief definition of the kind of crust	Pick your choice
+Once selection is done, click order	get your total price-With the price in mind you can choose to add another order or Checkout
+click checkout once satisfied, A message will appear, Choose whether or not you would like your pizza delivered to your place
+Enter location and will receive a notification letting you know a rider is coming to deliver. Wait for your pizza
+
+# Set Up Instruction
+- Open your terminal (ctrl+alt+T). 
+- Initialize git on your terminal.
+- git clone https://loisemuthoni.github.io/pizza/.
+- open the 'pizza' folder.
+- Open the file named index.html on your preferred internet browser.
+- Enter your pizza of choice into the input boxes.
+- Click Submit.
+- Wait for the response from the web application to let you the pizza is coming.
+
+# Technologies Used
+- HTML
+- CSS
+- JAVASCRIPT
+- JQUERY
+- BOOTSTRAP
+
+# Live Link
+- 
+
+# Contact Details
+Email: barackmaundu@gmail.com
+Phone: 0796579620
+
+# License
+MIT License
+
+Copyright (c) 2020 barack maundu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

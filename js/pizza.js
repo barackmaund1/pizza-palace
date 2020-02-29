@@ -163,7 +163,7 @@ $(document).ready(function(){
       $("button.proceed").hide();
       $("#information").hide();
       $("div.choise").slideDown(1000);
-      alert("confirm your cart container below and proceed with ordering")
+      alert("confirm your cart container next and proceed with ordering")
     
     }
 
