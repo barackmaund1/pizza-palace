@@ -124,11 +124,11 @@
           <div class="row">
               <div class="col-sm-5">
                 <form action="">
-                    <label for="select">Select Your Flavor</label>
+                    <label for="select">Select Your pizza</label>
                     <select class="browser-default custom-select custom-select-md mb-3 name">
-                      <option value="Chicken Tikka">Chicken Tikka</option>
-                      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
-                      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                      <option value="Chicken Tikka">Chicken & Beef pepperoni</option>
+                      <option value="PeriPeri Pizza">chicken Hawaian</option>
+                      <option value="Raspberry Dessert Pizza">chicken macon</option>
                       <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
                       <option value="Sunchoke Pizza">Sunchoke Pizza</option>
                       <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
@@ -146,6 +146,9 @@
                       <option value="Crispy">Crispy -- sh. 300</option>
                       <option value="Stuffed">Stuffed -- sh. 250</option>
                       <option value="Gluten-free">Gluten-free-- sh. 200</option>
+                      <option value="Deep-crust">Deep crust-- sh. 180</option>
+                      <option value="Thick-crust">Thick crust-- sh. 150</option>
+                      <option value="thin-crust">Thin crust-- sh. 100</option>
                     </select>
                   <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
                     <div class="custom-control custom-checkbox custom-control-inline">
@@ -161,8 +164,16 @@
                       <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="cap-up" value="Mushrooms" name="toppings">
-                      <label class="custom-control-label" for="cap-up">cap-up</label>
+                      <input type="checkbox" class="custom-control-input" id="onions" value="onion" name="toppings">
+                      <label class="custom-control-label" for="cap-up">Onions</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Black-olive" value="Black olive" name="toppings">
+                      <label class="custom-control-label" for="Black-olive">Black olive</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Extracheese" value="Extra cheese" name="toppings">
+                      <label class="custom-control-label" for="Extra cheese">Extra cheese</label>
                     </div>
                     <br><br>
                   <button type="submit" class="btn btn-orange proceed">Add to cart</button>
