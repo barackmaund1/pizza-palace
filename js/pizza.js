@@ -44,13 +44,22 @@ $(document).ready(function(){
         crust_price = 0;
       break;
       case "Crispy":
-        crust_price = 200;
+        crust_price = 300;
       break;
       case "Stuffed":
         crust_price = 250;
       break;
       case "Gluten-free":
+        crust_price = 200;
+      break;
+      case "Deep-crust":
         crust_price = 180;
+      break;
+      case "Thick-crust":
+        crust_price = 180;
+      break;
+      case "Thin-crust":
+        crust_price = 100;
       break;
       default:
         console.log("No price"); 
