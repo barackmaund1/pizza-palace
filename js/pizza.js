@@ -7,21 +7,8 @@ function Getpizza( name,size,crust,topping, total ){
   this.topping = topping;
   this.total = total;
 }
-total = price + crust_price + topping_value;
-console.log(total);
-var checkoutTotal =0;
-checkoutTotal = checkoutTotal + total;
-var topping_value = ptopping.length*50;
-console.log("toppins value" + topping_value);
-total = price + crust_price + topping_value;
-console.log(total);
 
-checkoutTotal = checkoutTotal + total;
-console.log(checkoutTotal);
-// constractor function
-var newOrder = new Getpizza(pname, psize, pcrust,ptopping,total);
 
-// user  interface
 // proceed button
 $(document).ready(function(){
   $("button.proceed").click(function(event){
@@ -74,17 +61,18 @@ $(document).ready(function(){
     if((psize == "0") && (pcrust == "0")){
       console.log("nothing selected");
       $("button.proceed").show();
-      $("#information").show();
       $("div.choise").hide();
       alert("Please select pizza size and crust"); 
     }
     else{
       $("button.proceed").hide();
-      $("#information").hide();
       $("div.choise").slideDown(1000);
     }
 
-   
+    total = price + crust_price + topping_value;
+    console.log(total);
+    var checkoutTotal =0;
+    checkoutTotal = checkoutTotal + total;
 
     $("#pizzaname").html($(".name option:selected").val());
     $("#pizzasize").html( $("#size option:selected").val());
@@ -97,7 +85,7 @@ $(document).ready(function(){
       var pname = $(".name option:selected").val();
       var psize = $("#size option:selected").val();
       var pcrust = $("#crust option:selected").val();
-      var ptopping = [];
+      var  ptopping = [];
       $.each($("input[name='toppings']:checked"), function(){            
           ptopping.push($(this).val());
       });
@@ -136,7 +124,15 @@ $(document).ready(function(){
           default:
             console.log("No price"); 
         }
-        
+        var topping_value = ptopping.length*50;
+        console.log("toppins value" + topping_value);
+        total = price + crust_price + topping_value;
+        console.log(total);
+        debugger
+        checkoutTotal = checkoutTotal + total;
+        console.log(checkoutTotal);
+      // constractor function
+      var newOrder = new Getpizza(pname, psize, pcrust,ptopping,total);
 
       $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
       console.log(newOrder);
@@ -182,7 +178,7 @@ $(document).ready(function(){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
+        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
       }
